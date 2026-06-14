@@ -38,6 +38,7 @@
     position: relative;
     z-index: 1;
 }
+
 @keyframes gradientShift {
     0% {
         background-position: 0% 50%;
@@ -49,6 +50,30 @@
         background-position: 0% 50%;
     }
 }
+
+.gradient-box-low {
+    width: 100%;
+    text-align: center;
+
+    background: linear-gradient(-45deg, #3498db, #8e44ad, #2ecc71, #f1c40f);
+    background-size: 400% 400%;
+    animation: gradientShiftLow 8s ease infinite;
+
+    padding: 24px 0;
+}
+
+@keyframes gradientShiftLow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .fade-up {
     transition: transform 0.4s ease, opacity 0.4s ease;
     opacity: 1;
