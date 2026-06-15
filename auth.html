@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ورود / ثبت‌نام</title>
+  <title>login / register</title>
   <script type="module" src="/main.js"></script>
 </head>
 <body class="bg-white text-gray-900 font-sans">
 
   <nav class="max-w-4xl mx-auto px-6 mt-4 flex items-center justify-between">
-    <a href="index.html" class="text-xl font-bold no-underline text-gray-900">برند شما</a>
-    <a href="index.html" class="text-sm no-underline text-gray-600 hover:text-gray-900">بازگشت به صفحه اصلی</a>
+    <a href="index.html" class="text-xl font-bold no-underline text-gray-900">your brand</a>
+    <a href="index.html" class="text-sm no-underline text-gray-600 hover:text-gray-900">back to homepage</a>
   </nav>
 
   <main class="max-w-md mx-auto px-6 mt-16">
@@ -18,22 +18,22 @@
     <div class="border border-gray-300 rounded-lg p-6">
 
       <div class="flex border-b border-gray-200 mb-6">
-        <button id="tab-login" class="flex-1 pb-2 text-center border-b-2 border-gray-900 font-semibold">ورود</button>
-        <button id="tab-register" class="flex-1 pb-2 text-center border-b-2 border-transparent text-gray-500">ثبت‌نام</button>
+        <button id="tab-login" class="flex-1 pb-2 text-center border-b-2 border-gray-900 font-semibold">login</button>
+        <button id="tab-register" class="flex-1 pb-2 text-center border-b-2 border-transparent text-gray-500">register</button>
       </div>
 
       <form id="auth-form" novalidate autocomplete="off">
 
         <div class="mb-4 hidden" id="field-username-wrap">
-          <label for="username" class="block text-sm font-medium mb-1">نام کاربری</label>
+          <label for="username" class="block text-sm font-medium mb-1">username</label>
           <input type="text" id="username" name="username"
                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
-                 placeholder="مثلا ali123" minlength="3" maxlength="30" />
+                 placeholder="e.g. ali123" minlength="3" maxlength="30" />
           <p class="text-red-600 text-xs mt-1 hidden" id="err-username"></p>
         </div>
 
         <div class="mb-4">
-          <label for="email" class="block text-sm font-medium mb-1">ایمیل</label>
+          <label for="email" class="block text-sm font-medium mb-1">email</label>
           <input type="email" id="email" name="email"
                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
                  placeholder="you@example.com" />
@@ -41,18 +41,18 @@
         </div>
 
         <div class="mb-4">
-          <label for="password" class="block text-sm font-medium mb-1">رمز عبور</label>
+          <label for="password" class="block text-sm font-medium mb-1">password</label>
           <input type="password" id="password" name="password"
                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
-                 placeholder="حداقل ۸ کاراکتر" minlength="8" />
+                 placeholder="min 8 characters" minlength="8" />
           <p class="text-red-600 text-xs mt-1 hidden" id="err-password"></p>
         </div>
 
         <div class="mb-4 hidden" id="field-confirm-wrap">
-          <label for="confirm" class="block text-sm font-medium mb-1">تکرار رمز عبور</label>
+          <label for="confirm" class="block text-sm font-medium mb-1">repeat password</label>
           <input type="password" id="confirm" name="confirm"
                  class="w-full border border-gray-300 rounded px-3 py-2 text-sm"
-                 placeholder="دوباره رمز عبور" />
+                 placeholder="repeat password" />
           <p class="text-red-600 text-xs mt-1 hidden" id="err-confirm"></p>
         </div>
 
@@ -61,13 +61,13 @@
 
         <button type="submit" id="submit-btn"
                 class="w-full bg-gray-900 text-white rounded py-2 text-sm hover:bg-gray-800">
-          ورود
+          login
         </button>
 
       </form>
 
       <p class="text-xs text-gray-500 mt-4 text-center">
-        این صفحه آزمایشی است و داده‌ها فقط در حافظه مرورگر ذخیره می‌شوند.
+        this page is for testing; data is stored only in your browser.
       </p>
 
     </div>
