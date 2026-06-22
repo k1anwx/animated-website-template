@@ -87,7 +87,7 @@
     background-color:rgba(75, 116, 240, 0.77);
     color: white;
     display: flex;    
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 15px;
     margin-top: 25px;
     padding: 30px;
@@ -104,4 +104,12 @@
 }
 .support-body {
     background-color: black;
+}
+.section {
+    width: 500px;
+    height: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    justify-content: flex-start;
+    color: black;
 }
